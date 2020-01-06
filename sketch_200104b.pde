@@ -69,31 +69,31 @@ void draw()
   switch(mode)
   {
     case 0:
-      rect(width - i * width / 360, 0, width, height);
+      rect(int(width - i * width / 360), 0, width, height);
       break;
     case 1:
-      rect(i * width / 360, 0, width, height);
+      rect(int(i * width / 360), 0, width, height);
       break;
     case 2:
-      rect(0, i * height / 360, width, height);
+      rect(0, int(i * height / 360), width, height);
       break;
     case 3:
-      rect(0, height - i * height / 360, width, height);
+      rect(0, int(height - i * height / 360), width, height);
       break;
     case 4:
-      arc(width/2, height/2, arcSize, arcSize, - PI / 2 - PI * 2 / 360 * i, - PI / 2);
+      arc(int(width/2), int(height/2), arcSize, arcSize, - PI / 2 - PI * 2 / 360 * i, - PI / 2);
       break;
     case 5:
-      arc(width/2, height/2, arcSize, arcSize, - PI / 2, - PI / 2 + PI * 2 / 360 * i);
+      arc(int(width/2), int(height/2), arcSize, arcSize, - PI / 2, - PI / 2 + PI * 2 / 360 * i);
       break;
     case 6:
-      fill(rgb[0], rgb[1], rgb[2], i * 255 / 360);
+      fill(rgb[0], rgb[1], rgb[2], int(i * 255 / 360));
       rect(0, 0, width, height);
       break;
     case 7:
       if(i < 360 / 2)
       {
-        fill(255, 255, 255, i * 255 * 2 / 360);
+        fill(255, 255, 255, int(i * 255 * 2 / 360));
       }
       else if(i == 180)
       {
@@ -102,14 +102,14 @@ void draw()
       }
       else
       {
-        fill(rgb[0], rgb[1], rgb[2], (i - 180) * 255 * 2 / 360);
+        fill(rgb[0], rgb[1], rgb[2], int((i - 180) * 255 * 2 / 360));
       }
       rect(0, 0, width, height);
       break;
     case 8:
       if(i < 360 / 2)
       {
-        fill(0, 0, 0,  i * 255 * 2 / 360);
+        fill(0, 0, 0,  int(i * 255 * 2 / 360));
       }
       else if(i == 180)
       {
@@ -118,7 +118,7 @@ void draw()
       }
       else
       {
-        fill(rgb[0], rgb[1], rgb[2], (i - 180) * 255 * 2 / 360);
+        fill(rgb[0], rgb[1], rgb[2], int((i - 180) * 255 * 2 / 360));
       }
       rect(0, 0, width, height);
       break;
@@ -128,21 +128,21 @@ void draw()
       {
          if(ii % 2 == 0)
          {
-           rect(width - i * width / 360 , ii * height / 7 , width, height / 7 +1);
+           rect(int(width - i * width / 360 ), int(ii * height / 7 ), width,int( height / 7 +1));
          }
          else
          {
-           rect(- width + i * width / 360 , ii * height / 7, width, height / 7 +1);
+           rect(int(- width + i * width / 360 ),int( ii * height / 7), width, int(height / 7 +1));
          }
       }
       break;
     case 10:
       fill(rgb[0], rgb[1], rgb[2]);
-      rect(width / 2 - i * width / 360 /2 , 0 , i * width / 360, height);
+      rect(int(width / 2 - i * width / 360 /2) , 0 ,int( i * width / 360), height);
       break;
     case 11:
       fill(rgb[0], rgb[1], rgb[2]);
-      ellipse(width / 2, height / 2, i * arcSize / 360, i * arcSize / 360);
+      ellipse(int(width / 2),int( height / 2), i * arcSize / 360, i * arcSize / 360);
       break;
     default:
       arc(width/2, height/2, arcSize, arcSize, - PI / 2, - PI / 2 + PI * 2 / 360 * i);
