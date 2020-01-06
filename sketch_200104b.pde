@@ -151,7 +151,7 @@ void draw()
   i = i + 1;
   if(i >= 360)
   {
-    backgroundRGB = rgb.clone();
+    backgroundRGB = rgb;
     rgb = new int[]{int(random(255)), int(random(255)), int(random(255))};
     i = 0;
     mode = int(random(11));
