@@ -7,6 +7,7 @@ Position[] textPosition;
 int countDownTextSize = 1;
 int countDown = 10;
 int mode = 0;
+PFont font; 
 
 class Position{
   int x;
@@ -38,23 +39,26 @@ void setup()
   rgb = new int[]{int(random(255)), int(random(255)), int(random(255))};
   //startSec = second();
   
-  //textPosition = new Position[10];
-  //for(int i = 0; i < textPosition.length; i ++)
-  //{
-  //  textPosition[i] = new Position();
-  //}
+  font = loadFont(".\\data\\ArialMT-90.vlw");
+  textPosition = new Position[10];
+  for(int i = 0; i < textPosition.length; i ++)
+  {
+    textPosition[i] = new Position();
+  }
 
-  //while(true)
-  //{  
-  //  textSize(countDownTextSize + 1);
-  //  float textWidth = textWidth("10");
-  //  if(textWidth > width )
-  //  {
-  //    break;
-  //  }
-  //  countDownTextSize = countDownTextSize + 1;
-  //}
-  //println(countDownTextSize);
+  while(true)
+  {  
+    textSize(countDownTextSize + 1);
+    float textWidth = textWidth("10");
+    if(textWidth > width )
+    {
+      break;
+    }
+    countDownTextSize = countDownTextSize + 1;
+  }
+  textFont(font);
+
+  // println(countDownTextSize);
 }
 
 
@@ -155,33 +159,33 @@ void draw()
     rgb = new int[]{int(random(255)), int(random(255)), int(random(255))};
     i = 0;
     mode = int(random(11));
-    //countDown = countDown - 1;
-    //if(countDown < 0)
-    //{
-    //  countDown = 10;
-    //}
+    countDown = countDown - 1;
+    if(countDown < 0)
+    {
+      countDown = 10;
+    }
   }
   
-  //String strData = "hello world";
-  //textSize(20);
-  //textLeading(20);
-  //float textWidth = textWidth(strData);
-  //textAlign(CENTER);
-  //for (int i = 0; i < textPosition.length; i++)
-  //{
-  //  fill(255, 255, 255);
-  //  text(strData, textPosition[i].x, textPosition[i].y, textWidth, height);
-  //  textPosition[i].x = textPosition[i].x - 1 * textPosition[i].velocity;
-  //  if( textPosition[i].x + textWidth < 0)
-  //  {
-  //    textPosition[i].update();
-  // }
-  //}
+  String strData = "hello world";
+  textSize(20);
+  textLeading(20);
+  float textWidth = textWidth(strData);
+  textAlign(CENTER);
+  for (int i = 0; i < textPosition.length; i++)
+  {
+    fill(255, 255, 255);
+    text(strData, textPosition[i].x, textPosition[i].y, textWidth, height);
+    textPosition[i].x = textPosition[i].x - 1 * textPosition[i].velocity;
+    if( textPosition[i].x + textWidth < 0)
+    {
+      textPosition[i].update();
+   }
+  }
   
-  //textSize(countDownTextSize);
-  //fill(255, 255, 255);
-  //textAlign(CENTER, CENTER);
-  //text(str(countDown), 0, 0, width, height);
+  textSize(countDownTextSize);
+  fill(255, 255, 255);
+  textAlign(CENTER, CENTER);
+  text(str(countDown), 0, 0, width, height);
 
 }
 
