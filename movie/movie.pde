@@ -1,3 +1,5 @@
+/* @pjs preload=".\data\IMG_0680.MP4"; */
+
 import processing.video.*;
 Movie myMovie;
 
