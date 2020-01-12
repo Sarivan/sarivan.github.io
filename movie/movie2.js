@@ -20,6 +20,7 @@ function setup() {
 function draw() {
   if(!isPaused)
   {
+    print("playing");
     background(150);
     image(video, 0, 0);
   }
@@ -30,11 +31,13 @@ function draw() {
 
   if(isFadeout)
   {
+    print("fadeout");
     fadeout();
   }
   
   if(isFadein)
   {
+    print("fadein");
     fadein();
   }
 }
@@ -64,10 +67,12 @@ function keyPressed()
 {
   if(!isFadeout)
   {
+    print("fadeout_when keyPressed");
     isFadeout = true;
   }
   else if(!isFadein && isPaused)
   {
+    print("fadein_when keyPressed");
     isPaused = false;
     isFadein = true;
   }
