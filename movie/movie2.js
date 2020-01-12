@@ -73,8 +73,8 @@ function keyPressed()
   }
 }
 
-function mousePressed()
-{
+// function mousePressed()
+//{
   // vid.elt.muted = true;
   // video.loop();
-}
+// }
