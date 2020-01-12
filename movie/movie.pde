@@ -43,7 +43,7 @@ float fadeSpeed = 1;
  
 void setup() {
   createCanvas(windowWidth, windowHeight);
-  myMovie = createVideo(["IMG_0680.MP4"]);
+  myMovie = createVideo(["IMG_0680.MP4, 	jutan-ot2z9.mov"]);
   //myMovie = new Movie(this, "IMG_0680.MP4");
   myMovie.loop();
   myMovie.size(movieWidth, movieHeight);
