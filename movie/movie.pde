@@ -1,6 +1,6 @@
 /* @pjs preload="movie\IMG_0680.MP4"; */
-import processing.video.*;
-Movie myMovie;
+// import processing.video.*;
+var myMovie;
 
 int movieWidth = 720;
 int movieHeight = 1280;
@@ -37,14 +37,17 @@ float rectAlpha = 0;
 float fadeSpeed = 1;
 
 
-void settings() {
-  size(movieWidth, movieHeight);
-}
+// void settings() {
+//  size(movieWidth, movieHeight);
+// }
  
 void setup() {
+  createCanvas(windowWidth, windowHeight);
   myMovie = createVideo(["IMG_0680.MP4"]);
   //myMovie = new Movie(this, "IMG_0680.MP4");
   myMovie.loop();
+  myMovie.size(movieWidth, movieHeight);
+  myMovie.hide();
   //myMovie.play();
   }
 
