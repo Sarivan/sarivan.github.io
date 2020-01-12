@@ -12,6 +12,8 @@ var now_frame;
 function setup() {
   createCanvas(videoWidth, videoHeight);
   video = createVideo(["movie/data/IMG_0680.MP4", "movie/data/IMG_0680_noMusic.MP4", "movie/data/jutan-ot2z9.mov"]);
+  video.elt.muted = true;
+  video.loop();
   video.hide();
 }
 
@@ -74,5 +76,5 @@ function keyPressed()
 function mousePressed()
 {
   // vid.elt.muted = true;
-  video.loop();
+  // video.loop();
 }
