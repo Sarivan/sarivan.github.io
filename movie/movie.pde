@@ -47,7 +47,7 @@ void setup() {
   //myMovie = new Movie(this, "IMG_0680.MP4");
   myMovie.loop();
   myMovie.size(movieWidth, movieHeight);
-  myMovie.hide();
+  //myMovie.hide();
   myMovie.play();
   }
 
