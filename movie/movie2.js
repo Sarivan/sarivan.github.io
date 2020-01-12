@@ -78,5 +78,6 @@ function keyPressed()
 
 function mousePressed()
 {
+  vid.elt.muted = true;
   video.loop();
 }
