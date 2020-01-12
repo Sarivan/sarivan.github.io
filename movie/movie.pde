@@ -52,6 +52,7 @@ void setup() {
   }
 
 void draw() {
+  background(150);
   if(myMovie.available()) {
 
     myMovie.read();
