@@ -42,7 +42,8 @@ void settings() {
 }
  
 void setup() {
-  myMovie = new Movie(this, "IMG_0680.MP4");
+  myMovie = createVideo(["IMG_0680.MP4"]);
+  //myMovie = new Movie(this, "IMG_0680.MP4");
   myMovie.loop();
   //myMovie.play();
   }
