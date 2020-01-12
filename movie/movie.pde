@@ -1,4 +1,4 @@
-/* @pjs preload="IMG_0680.MP4"; */
+/* @pjs preload="jutan-ot2z9.mov"; */
 
 import processing.video.*;
 Movie myMovie;
@@ -43,7 +43,7 @@ void settings() {
 }
  
 void setup() {
-  myMovie = new Movie(this, "IMG_0680.MP4");
+  myMovie = new Movie(this, "jutan-ot2z9.mov");
   myMovie.loop();
   myMovie.play();
   }
