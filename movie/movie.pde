@@ -1,4 +1,4 @@
-/* @pjs preload="movie\jutan-ot2z9.mov"; */
+#/* @pjs preload="movie\jutan-ot2z9.mov"; */
 
 import processing.video.*;
 Movie myMovie;
