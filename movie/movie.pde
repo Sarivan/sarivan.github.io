@@ -49,6 +49,12 @@ void setup() {
   }
 
 void draw() {
+  if(myMovie.available()) {
+
+    myMovie.read();
+
+  }
+
   image(myMovie, 0, 0, width, height);
 
   noStroke();
