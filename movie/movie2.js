@@ -64,12 +64,12 @@ function fadein()
 
 function keyPressed()
 {
-  if(!isFadeout && !isPaused)
+  if(!isFadeout && rectAlpha == 0)
   {
     print("fadeout_when keyPressed");
     isFadeout = true;
   }
-  else if(!isFadein && isPaused)
+  else if(!isFadein && rectAlpha == 255)
   {
     print("fadein_when keyPressed");
     isPaused = false;
