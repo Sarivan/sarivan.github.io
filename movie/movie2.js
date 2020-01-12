@@ -78,4 +78,5 @@ function keyPressed()
 
 function mousePressed()
 {
+  video.loop();
 }
