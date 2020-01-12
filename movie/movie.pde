@@ -48,7 +48,7 @@ void setup() {
   myMovie.loop();
   myMovie.size(movieWidth, movieHeight);
   myMovie.hide();
-  //myMovie.play();
+  myMovie.play();
   }
 
 void draw() {
