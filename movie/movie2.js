@@ -27,14 +27,15 @@ function draw() {
   {
     image(now_frame, 0, 0);
   }
-    noStroke();
-    fill(0, 0, 0, rectAlpha);
-    rect(0, 0, videoWidth, videoHeight);
+  
+  noStroke();
+  fill(0, 0, 0, rectAlpha);
+  rect(0, 0, videoWidth, videoHeight);
 
-    if(isFadeout)
-    {
-      fadeout();
-    }
+  if(isFadeout)
+  {
+    fadeout();
+  }
   
   if(isFadein)
   {
