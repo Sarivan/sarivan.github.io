@@ -16,15 +16,10 @@ function setup() {
 }
 
 function draw() {
-  background(150);
   if(!isPaused)
   {
-    now_frame = video;
-    image(now_frame, 0, 0);
-  }
-  else
-  {
-    image(now_frame, 0, 0);
+    background(150);
+    image(video, 0, 0);
   }
   
   noStroke();
