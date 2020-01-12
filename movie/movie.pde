@@ -4,7 +4,8 @@ var playing = false;
 function setup() {
   createCanvas(0, 0);
   myMovie = createVideo(["movie/IMG_0680.MP4", "movie/jutan-ot2z9.mov"]);
-  myMovie.loop();
+  myMovie.play();
+  myMovie.showControls();
 }
 
 function draw() {
