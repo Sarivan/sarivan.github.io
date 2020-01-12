@@ -34,8 +34,7 @@ function draw() {
     print("fadeout");
     fadeout();
   }
-  
-  if(isFadein)
+  else if(isFadein)
   {
     print("fadein");
     fadein();
