@@ -5,13 +5,13 @@ var rectAlpha = 0;
 var fadeSpeed = 1;
 var isPaused = false;
 
-var videoWidth = 710;
-var videoHeight = 400;
+var videoWidth = 720;
+var videoHeight = 1280;
 var now_frame;
 
 function setup() {
   createCanvas(videoWidth, videoHeight);
-  video = createVideo(['assets/fingers.mov', 'assets/fingers.webm']);
+  video = createVideo(["movie/data/IMG_0680.MP4", "movie/data/IMG_0680_noMusic.MP4", "movie/data/jutan-ot2z9.mov"]);
   video.hide();
   video.loop();
 }
