@@ -13,7 +13,6 @@ function setup() {
   createCanvas(videoWidth, videoHeight);
   video = createVideo(["movie/data/IMG_0680.MP4", "movie/data/IMG_0680_noMusic.MP4", "movie/data/jutan-ot2z9.mov"]);
   video.hide();
-  video.loop();
 }
 
 function draw() {
