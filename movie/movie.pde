@@ -54,7 +54,7 @@ void draw() {
 
   }
 
-  image(myMovie, 0, 0, width, height);
+  image(myMovie, 0, 0);
 
   noStroke();
   fill(0, 0, 0, rectAlpha);
