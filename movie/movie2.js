@@ -65,7 +65,7 @@ function fadein()
 
 function keyPressed()
 {
-  if(!isFadeout)
+  if(!isFadeout && !isPaused)
   {
     print("fadeout_when keyPressed");
     isFadeout = true;
